@@ -1,7 +1,7 @@
 import sys
 
-sys.path.append('~/Workspace/FutureDet')
-sys.path.append('~/Workspace/Core/nuscenes-forecast/python-sdk')
+sys.path.append('/home/milos/project/FutureDet')
+sys.path.append('/home/milos/project/nuscenes-forecast/python-sdk')
 
 import pickle
 import json

@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import sys
+sys.path.append('/home/milos/project/FutureDet')
 
 from numba.core.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning, NumbaWarning
 import warnings

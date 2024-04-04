@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/home/milos/project/nuscenes-forecast/python-sdk')
 from datetime import time
 import numpy as np
 import cv2
@@ -13,15 +15,12 @@ from pyquaternion import Quaternion
 from itertools import tee
 from copy import deepcopy
 
-try:
-    from nuscenes import NuScenes
-    from nuscenes.utils import splits
-    from nuscenes.utils.data_classes import Box, LidarPointCloud
-    from nuscenes.eval.detection.config import config_factory
-    from nuscenes.eval.detection.evaluate import NuScenesEval
-    from nuscenes.eval.detection.render import visualize_sample
-except:
-    print("nuScenes devkit not Found!")
+from nuscenes.nuscenes import NuScenes
+from nuscenes.utils import splits
+from nuscenes.utils.data_classes import Box, LidarPointCloud
+from nuscenes.eval.detection.config import config_factory
+from nuscenes.eval.detection.evaluate import NuScenesEval
+from nuscenes.eval.detection.render import visualize_sample
 
 import pdb 
 

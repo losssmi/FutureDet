@@ -105,7 +105,7 @@ test_cfg = dict(
 # dataset settings
 dataset_type = "NuScenesDataset"
 nsweeps = 20
-data_root = "/home/ubuntu/Workspace/Data/nuScenes/trainval_forecast"
+data_root = "/home/milos/project/dataset/trainval_forecast"
 
 if sampler_type == "standard":
     sample_group=[

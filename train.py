@@ -4,8 +4,8 @@ import pynvml
 import sys
 import pdb 
 
-sys.path.append('/home/nperi/Workspace/FutureDet')
-sys.path.append('/home/nperi/Workspace/Core/nuscenes-forecast/python-sdk')
+sys.path.append('/home/milos/project/FutureDet')
+sys.path.append('/home/milos/project/nuscenes-forecast/python-sdk')
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model', required=True)

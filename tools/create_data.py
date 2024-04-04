@@ -5,8 +5,8 @@ import pickle
 import fire, os
 import sys 
 
-sys.path.append('~/Workspace/FutureDet')
-sys.path.append('~/Workspace/Core/nuscenes-forecast/python-sdk')
+sys.path.append('/home/milos/project/FutureDet')
+sys.path.append('/home/milos/project/nuscenes-forecast/python-sdk')
 
 from det3d.datasets.nuscenes import nusc_common as nu_ds
 from det3d.datasets.utils.create_gt_database import create_groundtruth_database

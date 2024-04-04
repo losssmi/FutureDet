@@ -212,6 +212,7 @@ class Preprocess(object):
         bev = get_mask(anno_dict["bev"], t=trans_aug, angle=rot_aug, flip=flip_aug, scale=scale_aug)
 
         #bev = np.concatenate((bev_map, bev[...,None]), axis=-1)
+        bev = bev[None, :, :]
 
         res["lidar"]["bev_map"] = bev.transpose(2, 0, 1)
 

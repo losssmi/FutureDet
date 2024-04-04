@@ -5,13 +5,13 @@ import pdb
 from copy import deepcopy
 from pprint import pprint
 import numpy as np
-import mkl
+import mk
 import pandas as pd
 import pynvml
 import sys
 
-sys.path.append('~/Workspace/FutureDet')
-sys.path.append('~/Workspace/Core/nuscenes-forecast/python-sdk')
+sys.path.append('/home/milos/project/FutureDet')
+sys.path.append('/home/milos/project/nuscenes-forecast/python-sdk')
 
 
 from nuscenes.eval.detection.constants import getDetectionNames
@@ -83,12 +83,12 @@ except:
 parser = argparse.ArgumentParser()
 parser.add_argument('--model', required=True)
 parser.add_argument('--experiment', required=True)
-parser.add_argument("--rootDirectory", default="~/Workspace/Data/nuScenes")
+parser.add_argument("--rootDirectory", default="/home/milos/project/dataset")
 parser.add_argument("--dataset", default="nusc")
 parser.add_argument('--architecture', default="centerpoint")
 parser.add_argument("--extractBox", action="store_true")
-parser.add_argument("--version", default="v1.0-trainval") #
-parser.add_argument("--split", default="val") #
+parser.add_argument("--version", default="v1.0-mini") #
+parser.add_argument("--split", default="mini_val") #
 parser.add_argument("--modelCheckPoint", default="latest")
 parser.add_argument("--forecast", default=7)
 parser.add_argument("--tp_pct", default=0.6)
